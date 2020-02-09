@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Calculator</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script type="text/javascript" src="scripts.js"></script>
+  </head>
+  <body style="background-color: #7EA2AA;">
+    <header>
+      <div class="banner">
+        <h1>Calculator</h1>
+      </div>
+    </header>
+    <div class="calculator">
+      <div class="card-body">
+        <label class="resultbox" id="result"></label>
+        <input
+          type="text"
+          class="form-control"
+          id="userInput"
+          style="text-align: right;"
+        />
+      </div>
+      <div class="container">
+        <div class="row box">
+          <button
+            type="button"
+            class="btn btn-dark"
+            onclick="insertNumber('(')"
+          >
+            (
+          </button>
+          <button
+            type="button"
+            class="btn btn-dark"
+            onclick="insertNumber(')')"
+          >
+            )
+          </button>
+          <button type="button" class="btn btn-dark" onclick="backspace()">
+            CE
+          </button>
+          <button type="button" class="btn btn-dark" onclick="clearFields()">
+            C
+          </button>
+        </div>
+        <div class="row box">
+          <button type="button" class="btn btn-dark" onclick="insertNumber(7)">
+            7
+          </button>
+          <button type="button" class="btn btn-dark" onclick="insertNumber(8)">
+            8
+          </button>
+          <button type="button" class="btn btn-dark" onclick="insertNumber(9)">
+            9
+          </button>
+          <button
+            type="button"
+            class="btn btn-dark"
+            onclick="insertNumber('/')"
+          >
+            /
+          </button>
+        </div>
+        <div class="row box">
+          <button type="button" class="btn btn-dark" onclick="insertNumber(4)">
+            4
+          </button>
+          <button type="button" class="btn btn-dark" onclick="insertNumber(5)">
+            5
+          </button>
+          <button type="button" class="btn btn-dark" onclick="insertNumber(6)">
+            6
+          </button>
+          <button
+            type="button"
+            class="btn btn-dark"
+            onclick="insertNumber('*')"
+          >
+            x
+          </button>
+        </div>
+        <div class="row box">
+          <button type="button" class="btn btn-dark" onclick="insertNumber(1)">
+            1
+          </button>
+          <button type="button" class="btn btn-dark" onclick="insertNumber(2)">
+            2
+          </button>
+          <button type="button" class="btn btn-dark" onclick="insertNumber(3)">
+            3
+          </button>
+          <button
+            type="button"
+            class="btn btn-dark"
+            onclick="insertNumber('-')"
+          >
+            -
+          </button>
+        </div>
+        <div class="row box">
+          <button type="button" class="btn btn-dark" onclick="insertNumber(0)">
+            0
+          </button>
+          <button
+            type="button"
+            class="btn btn-dark"
+            onclick="insertNumber('.')"
+          >
+            .
+          </button>
+          <button type="button" class="btn btn-dark" onclick="equal()">
+            =
+          </button>
+          <button
+            type="button"
+            class="btn btn-dark"
+            onclick="insertNumber('+')"
+          >
+            +
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
