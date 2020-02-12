@@ -11,8 +11,6 @@
 .calculator {
   justify-content: center;
   align-items: center;
-  height: 500px;
-  width: 305px;
   background-color: #d14e4e;
   border-radius: 5px;
   border-color: black;

@@ -1,26 +1,11 @@
-var expression = null;
-var result = null;
+var expression = "";
 
 function insertNumber(val) {
-  var operators = ["/", "*", "-", "+"];
-  if (operators.includes(val)) {
-    if (result != null) {
-      expression = "(" + result + ")" + val;
-      console.log(expression);
-      document.getElementById("userInput").value = "ANS" + val;
-    } else {
-      expression += val;
-      document.getElementById("userInput").value += val;
-    }
-  } else {
-    expression += val;
-    document.getElementById("userInput").value += val;
-  }
+  document.getElementById("userInput").value += val;
 }
 
 function clearFields() {
-  expression = null;
-  result = null;
+  expression = "";
   document.getElementById("userInput").value = "";
   document.getElementById("result").innerHTML = "";
 }
@@ -35,13 +20,13 @@ function backspace() {
 }
 
 function equal() {
-  var text = document.getElementById("userInput").value;
-  if (text != "") {
-    try {
-      result = eval(expression);
-      document.getElementById("result").innerHTML = result;
-    } catch (err) {
-      document.getElementById("result").innerHTML = expression + " =ERROR";
-    }
+  var expression = document.getElementById("userInput");
+  var result = document.getElementById("result");
+  try {
+    var val = eval(expression.value);
+    expression.value = val;
+    result.innerHTML = val;
+  } catch (err) {
+    result.innerHTML = "=ERROR";
   }
 }
