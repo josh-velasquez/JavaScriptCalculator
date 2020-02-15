@@ -12,81 +12,83 @@
     <script type="text/javascript" src="scripts.js"></script>
   </head>
   <div class="banner">
-    <h1>Calculator</h1>
+    <h1 style="color: #D3FFF3;">Calculator</h1>
   </div>
-  <div class="calculator">
-    <label class="resultbox" id="result"></label>
-    <input
-      type="text"
-      class="form-control"
-      id="userInput"
-      style="text-align: right;"
-    />
-    <div class="buttons-box">
-      <button type="button" class="btn btn-dark" onclick="insertNumber('(')">
-        (
-      </button>
-      <button type="button" class="btn btn-dark" onclick="insertNumber(')')">
-        )
-      </button>
-      <button type="button" class="btn btn-warning" onclick="backspace()">
-        CE
-      </button>
-      <button type="button" class="btn btn-primary" onclick="clearFields()">
-        C
-      </button>
+  <body>
+    <div class="calculator">
+      <label class="resultbox" id="result"></label>
+      <input
+        type="text"
+        class="form-control"
+        id="userInput"
+        style="text-align: right;"
+      />
+      <div class="buttons-box">
+        <button type="button" class="btn btn-dark" onclick="insertNumber('(')">
+          (
+        </button>
+        <button type="button" class="btn btn-dark" onclick="insertNumber(')')">
+          )
+        </button>
+        <button type="button" class="btn btn-warning" onclick="backspace()">
+          CE
+        </button>
+        <button type="button" class="btn btn-primary" onclick="clearFields()">
+          C
+        </button>
 
-      <button type="button" class="btn btn-dark" onclick="insertNumber('7')">
-        7
-      </button>
-      <button type="button" class="btn btn-dark" onclick="insertNumber('8')">
-        8
-      </button>
-      <button type="button" class="btn btn-dark" onclick="insertNumber('9')">
-        9
-      </button>
-      <button type="button" class="btn btn-dark" onclick="insertNumber('/')">
-        /
-      </button>
+        <button type="button" class="btn btn-dark" onclick="insertNumber('7')">
+          7
+        </button>
+        <button type="button" class="btn btn-dark" onclick="insertNumber('8')">
+          8
+        </button>
+        <button type="button" class="btn btn-dark" onclick="insertNumber('9')">
+          9
+        </button>
+        <button type="button" class="btn btn-dark" onclick="insertNumber('/')">
+          /
+        </button>
 
-      <button type="button" class="btn btn-dark" onclick="insertNumber('4')">
-        4
-      </button>
-      <button type="button" class="btn btn-dark" onclick="insertNumber('5')">
-        5
-      </button>
-      <button type="button" class="btn btn-dark" onclick="insertNumber('6')">
-        6
-      </button>
-      <button type="button" class="btn btn-dark" onclick="insertNumber('*')">
-        x
-      </button>
+        <button type="button" class="btn btn-dark" onclick="insertNumber('4')">
+          4
+        </button>
+        <button type="button" class="btn btn-dark" onclick="insertNumber('5')">
+          5
+        </button>
+        <button type="button" class="btn btn-dark" onclick="insertNumber('6')">
+          6
+        </button>
+        <button type="button" class="btn btn-dark" onclick="insertNumber('*')">
+          x
+        </button>
 
-      <button type="button" class="btn btn-dark" onclick="insertNumber('1')">
-        1
-      </button>
-      <button type="button" class="btn btn-dark" onclick="insertNumber('2')">
-        2
-      </button>
-      <button type="button" class="btn btn-dark" onclick="insertNumber('3')">
-        3
-      </button>
-      <button type="button" class="btn btn-dark" onclick="insertNumber('-')">
-        -
-      </button>
+        <button type="button" class="btn btn-dark" onclick="insertNumber('1')">
+          1
+        </button>
+        <button type="button" class="btn btn-dark" onclick="insertNumber('2')">
+          2
+        </button>
+        <button type="button" class="btn btn-dark" onclick="insertNumber('3')">
+          3
+        </button>
+        <button type="button" class="btn btn-dark" onclick="insertNumber('-')">
+          -
+        </button>
 
-      <button type="button" class="btn btn-dark" onclick="insertNumber('0')">
-        0
-      </button>
-      <button type="button" class="btn btn-dark" onclick="insertNumber('.')">
-        .
-      </button>
-      <button type="button" class="btn btn-dark" onclick="equal()">
-        =
-      </button>
-      <button type="button" class="btn btn-dark" onclick="insertNumber('+')">
-        +
-      </button>
+        <button type="button" class="btn btn-dark" onclick="insertNumber('0')">
+          0
+        </button>
+        <button type="button" class="btn btn-dark" onclick="insertNumber('.')">
+          .
+        </button>
+        <button type="button" class="btn btn-dark" onclick="equal()">
+          =
+        </button>
+        <button type="button" class="btn btn-dark" onclick="insertNumber('+')">
+          +
+        </button>
+      </div>
     </div>
   </body>
 </html>
